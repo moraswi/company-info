@@ -1,19 +1,22 @@
 <template>
   <v-app>
     <v-main class="top-section text-center">
-      <SignUp />
+      <NavBar />
+      <HairStyles />
     </v-main>
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
-import SignUp from "@/components/SignUp.vue";
+import NavBar from "@/components/NavBar.vue";
+import HairStyles from "@/components/HairStyles.vue";
 
 export default {
-  name: "SignUp",
+  name: "HomeView",
   components: {
-    SignUp,
+    NavBar,
+    HairStyles,
   },
 };
 </script>

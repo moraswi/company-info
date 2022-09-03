@@ -1,19 +1,22 @@
 <template>
   <v-app>
     <v-main class="top-section text-center">
-      <HairStyles />
+      <NavBar />
+      <ForgotPassword />
     </v-main>
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
-import HairStyles from "@/components/HairStyles.vue";
+import NavBar from "@/components/NavBar.vue";
+import ForgotPassword from "@/components/ForgotPassword.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HairStyles,
+    NavBar,
+    ForgotPassword,
   },
 };
 </script>

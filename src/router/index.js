@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../views/HomePage.vue";
 
 Vue.use(VueRouter);
 
@@ -14,21 +14,21 @@ const routes = [
     path: "/signUp",
     name: "signUp",
 
-    component: () => import("@/views/Employee.vue"),
+    component: () => import("@/views/SignUp.vue"),
   },
 
   {
     path: "/forgotPaswword",
     name: "forgotPaswword",
     props: true,
-    component: () => import("@/views/Form.vue"),
+    component: () => import("@/views/ForgotPassword.vue"),
   },
 
   {
-    path: "/hairstyles",
-    name: "hairstyles",
+    path: "/products",
+    name: "products",
     props: true,
-    component: () => import("@/views/HairStyles.vue"),
+    component: () => import("@/views/Products.vue"),
   },
 ];
 

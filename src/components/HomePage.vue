@@ -32,7 +32,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn block color="green" to="hairstyles">Login</v-btn>
+                <v-btn block color="green" to="products">Login</v-btn>
               </v-card-actions>
 
               <v-card-actions>

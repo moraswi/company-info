@@ -10,9 +10,6 @@
         <v-text-field label="Phone Number" required></v-text-field>
 
         <v-btn class="mr-4"> Register </v-btn>
-        <!-- <v-btn @click="clear">
-      clear
-    </v-btn> -->
       </form>
     </v-card>
   </v-container>
@@ -20,13 +17,10 @@
 
 <script>
 export default {
-  /* eslint-disable */
   name: "HelloWorld",
 
   data: () => ({}),
 };
 </script>
 
-<style lang="scss" scoped>
-//
-</style>
+<style lang="scss" scoped></style>

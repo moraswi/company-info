@@ -44,12 +44,17 @@
 
             <!-- Log In -->
 
-            <a
+            <!-- <a
               class="white--text nav-link text-decoration-none ma-9 mr-16 mt-7 hidden-sm-and-down"
               href="#"
-              >Sign In</a
+              >Sign Up</a
+            > -->
+            <router-link
+              class="text-decoration-none white--text mt-8"
+              to="signUp"
             >
-
+              <p>Sign Up</p></router-link
+            >
             <!--  GET STARTED-->
 
             <a class="text-decoration-none" href="#getStarted"
