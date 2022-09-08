@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-card class="transparent" height="150" flat></v-card>
     <v-container>
       <v-card class="mx-auto pa-2" max-width="544">
         <v-img
