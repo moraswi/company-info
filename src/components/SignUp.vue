@@ -34,7 +34,7 @@
           required
         ></v-text-field>
 
-        <v-btn @click="registerRequest" class="mr-4"> Register </v-btn>
+        <v-btn @click="registerRequest()" class="mr-4"> Register </v-btn>
       </form>
     </v-card>
   </v-container>
@@ -58,14 +58,33 @@ export default {
 
   methods: {
     registerRequest() {
-      Axios.post("https://jsonplaceholder.typicode.com/posts", this.formDetails)
+      Axios.post("http://localhost:4000/api/register", this.formDetails)
         .then((response) => {
-          if (response.status == 201) {
+          if (response.status == 200) {
             console.log(response);
             console.log(response.status);
+            // this.$router.push("/");
+          } else if (
+            response.status == 403 ||
+            response.status == 404 ||
+            response.status == 422
+          ) {
+            this.$router.push("/");
+            // if ("message" in data) {
+            //   this.$swal({
+            //     icon: "error",
+            //     title: "Oops...",
+            //     text: data.message,
+            //   });
+            // }
+          } else {
+            this.$router.push("/");
           }
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          this.$router.push("/");
+          console.log(error);
+        });
     },
   },
 };

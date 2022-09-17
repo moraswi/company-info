@@ -20,18 +20,50 @@ const routes = [
   {
     path: "/forgotPaswword",
     name: "forgotPaswword",
-    props: true,
+    // props: true,
     component: () => import("@/views/ForgotPassword.vue"),
   },
 
   {
     path: "/products",
     name: "products",
-    props: true,
+    // props: true,
     component: () => import("@/views/Products.vue"),
   },
-];
 
+  {
+    path: "/location",
+    name: "location",
+    // props: true,
+    component: () => import("@/views/shopLocation.vue"),
+  },
+
+  {
+    path: "/collection",
+    name: "collection",
+    // props: true,
+    component: () => import("@/views/ProductCollection.vue"),
+  },
+  {
+    path: "/pay",
+    name: "pay",
+    // props: true,
+    component: () => import("@/views/PayScreen.vue"),
+  },
+  {
+    path: "/booking",
+    name: "booking",
+    // props: true,
+    component: () => import("@/views/Bookings.vue"),
+  },
+
+  {
+    path: "/details",
+    name: "details",
+    // props: true,
+    component: () => import("@/views/Details.vue"),
+  },
+];
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,

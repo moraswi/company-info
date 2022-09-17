@@ -29,11 +29,16 @@
         <div>
           <v-row class="navB nav-link">
             <!-- Contact Us -->
+            <a
+              class="nav-link white--text text-decoration-none ma-6 mt-7 hidden-sm-and-down"
+              href="/products"
+              >Home</a
+            >
 
             <a
               class="nav-link white--text text-decoration-none ma-6 mt-7 hidden-sm-and-down"
-              href="#"
-              >Location</a
+              href="/booking"
+              >Bookings</a
             >
 
             <a
