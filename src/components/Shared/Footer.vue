@@ -61,6 +61,8 @@
           <p class="mt-4">South Africa, Limpopo, Polokwane</p>
         </v-col>
       </v-row>
+
+      <v-row> </v-row>
     </v-container>
   </div>
 </template>
