@@ -1,0 +1,106 @@
+.kmLogo {
+  width: 139px;
+}
+.nav {
+  position: fixed;
+  z-index: 3;
+
+  width: 100%;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  // border-radius: 20px;
+}
+.omniLogo {
+  margin-top: 1px;
+}
+
+.sideBar {
+  position: fixed;
+}
+.imgId {
+  height: 33px;
+  width: 235px;
+}
+.callBackCard {
+  width: 136px;
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+p {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+}
+@media screen and (max-width: 1265px) {
+  .kmLogo {
+    width: 99px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  // .kmLogo {
+  //   width: 110px;
+  // }
+  .omniLogo {
+    margin-top: 9px;
+  }
+  p {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kmLogo {
+    width: 100px;
+  }
+  .omniLogo {
+    margin-top: 14px;
+  }
+  .callBackCard {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .nav {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .callBackCard {
+    margin-top: -42px;
+    margin-left: 65px;
+  }
+  .kmLogo {
+    width: 90px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .callBackCard {
+    margin-top: -42px;
+    margin-left: 20px;
+  }
+  .kmLogo {
+    width: 60px;
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .callBackCard {
+    margin-top: -45px;
+    margin-left: 185px;
+  }
+  .nav {
+    height: 80px;
+  }
+}
