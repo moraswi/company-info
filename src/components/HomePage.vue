@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="red white--text pt-16 pb-5 text-left" flat>
+    <v-card class="red white--text pb-3 text-left redCardTop" flat>
       <v-container>
         <h1 class="mt-10">Photoshot</h1>
       </v-container>
@@ -41,7 +41,7 @@
               class="kmLogo"
               contain
               width="100%"
-              src="@/assets/img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg"
+              src="@/assets/logo.png"
             />
           </v-card>
         </v-col>
@@ -53,7 +53,7 @@
               class="kmLogo"
               contain
               width="100%"
-              src="@/assets/img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg"
+              src="@/assets/logo.png"
             />
           </v-card>
         </v-col>
@@ -65,7 +65,7 @@
               class="kmLogo"
               contain
               width="100%"
-              src="@/assets/img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg"
+              src="@/assets/logo.png"
             />
           </v-card>
         </v-col>
@@ -108,4 +108,6 @@ export default {
 
 <style lang="scss" scoped>
 //
+
+@import "@/components/HomePage.scss";
 </style>

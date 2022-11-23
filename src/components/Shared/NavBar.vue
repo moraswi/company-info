@@ -1,8 +1,8 @@
 <template>
   <div class="nav">
-    <v-card class="red" height="40" width="100%" flat tile>
-      <v-container class="py-2 text-left paragraph-p1">
-        <v-icon class="mb-1" medium color="orange"> mdi-clock-outline </v-icon>
+    <v-card class="red py-2" height="60" width="100%" flat tile>
+      <v-container class="py-2 text-left paragraph-p1 white--text">
+        <v-icon class="mb-1" medium color="white"> mdi-clock-outline </v-icon>
 
         <label class="paragraph-p1">
           Hours : Mon - Fri - 07:30am - 16:30pm
@@ -11,7 +11,7 @@
           <label> 0123456789 </label> -->
       </v-container>
     </v-card>
-    <v-card class="">
+    <v-card class="py-5">
       <v-container>
         <v-row class="white--text">
           <v-btn
@@ -68,8 +68,8 @@
                 color="orange"
                 depressed
                 rounded
-                class="mt-4 mr-5 white--text"
-                :to="{ name: 'LogIn' }"
+                class="mt-5 mr-5 white--text"
+                :to="{ name: 'contactUs' }"
               >
                 Contact Us <v-icon right dark> mdi-login </v-icon>
               </v-btn>

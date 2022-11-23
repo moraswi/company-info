@@ -1,0 +1,149 @@
+.contactTop {
+  margin-top: 550px;
+}
+
+input,
+textarea {
+  overflow-wrap: break-word;
+  align-items: center;
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 10px 15px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+// form
+.label-before {
+  line-height: 20px;
+  font-size: 12px;
+  top: -10px;
+
+  padding: 0 6px;
+}
+
+.field {
+  position: relative;
+  margin-top: 40px;
+
+  // BEFOR YOU ENTER DETEILS
+  label::before {
+    font-weight: bold;
+
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 1px;
+    line-height: 40px;
+    font-size: 24px; //size of label befor filling fields
+    color: black;
+    transition: 300ms all;
+  }
+  .messageLable::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 1px;
+    line-height: 40px;
+    font-size: 24px; //size of message label befor filling fields
+    color: black;
+    transition: 300ms all;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 24px; //size of inputs
+    color: black;
+    border-bottom: 2px solid black;
+    // border-radius: 3px;
+
+    &:focus {
+      outline: 0;
+      border-color: black;
+    }
+    &:valid + label::before {
+      @extend .label-before;
+      content: attr(data-title);
+      font-size: 20px; //size of label aftyer filling fields
+
+      margin-top: -14px;
+      margin-left: 1px;
+      // line-height: -90px;
+      color: orange;
+      font-weight: bold;
+    }
+  }
+
+  textarea {
+    &:valid + label::before {
+      @extend .label-before;
+      content: attr(data-title);
+      margin-top: -1px;
+      margin-left: 2px;
+    }
+  }
+}
+
+.message {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 20px;
+  resize: none;
+}
+.sendBtn {
+  margin-top: 15px;
+  border: 2px solid black;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .contactTop {
+    margin-top: 135px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .label-before {
+    line-height: 20px;
+    font-size: 12px;
+    top: -10px;
+
+    padding: 0 6px;
+  }
+
+  .field {
+    // BEFOR YOU ENTER DETEILS
+    label::before {
+      font-size: 13px; //size of label befor filling fields
+    }
+    .messageLable::before {
+      content: attr(title);
+      font-size: 13px; //size of message label befor filling fields
+    }
+
+    input,
+    textarea {
+      font-size: 13px; //size of inputs
+      &:valid + label::before {
+        @extend .label-before;
+        font-size: 11.66px; //size of label aftyer filling fields
+      }
+    }
+  }
+}

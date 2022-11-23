@@ -10,12 +10,12 @@ const routes = [
     name: "home",
     component: HomeView,
   },
-  // {
-  //   path: "/signUp",
-  //   name: "signUp",
 
-  //   component: () => import("@/views/SignUp.vue"),
-  // },
+  {
+    path: "/contactUs",
+    name: "contactUs",
+    component: () => import("@/views/contacts.vue"),
+  },
 
   // {
   //   path: "/forgotPaswword",
